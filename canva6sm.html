@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Management</title>
+    <link rel="stylesheet" href="canva6sm.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Staff Management</h1>
+        </header>
+
+        <div class="staff-management">
+            <div class="form-section">
+                <div class="form-row">
+                    <button class="generate-btn">Generate Report</button>
+                    <input type="text" id="staff-id" placeholder="ID">
+                    <button class="search-btn">Search</button>
+                </div>
+
+                <div class="form-row">
+                    <input type="text" id="first-name" placeholder="First Name">
+                    <input type="text" id="last-name" placeholder="Last Name">
+                </div>
+
+                <div class="form-row">
+                    <select id="role">
+                        <option value="">Role</option>
+                        <option value="Doctor">Doctor</option>
+                        <option value="Nurse">Nurse</option>
+                        <option value="Technician">Technician</option>
+                    </select>
+
+                    <select id="gender">
+                        <option value="">Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="text" id="mobile-number" placeholder="Mobile Number">
+                </div>
+
+                <div class="form-row">
+                    <input type="text" id="address" placeholder="Address">
+                </div>
+
+                <div class="form-row">
+                    <input type="text" id="nic" placeholder="NIC">
+                    <input type="date" id="dob" placeholder="Date of Birth">
+                </div>
+
+                <div class="form-row">
+                    <input type="password" id="password" placeholder="Password">
+                    <input type="password" id="confirm-password" placeholder="Confirm Password">
+                </div>
+
+                <div class="buttons">
+                    <button class="register-btn">Register</button>
+                    <button class="update-btn">Update</button>
+                    <button class="delete-btn">Delete</button>
+                </div>
+            </div>
+
+            <!-- Table Section for Recent Staff -->
+            <div class="recent-staff">
+                <h3>Recent Doctors</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Role</th>
+                            <th>Gender</th>
+                            <th>Email</th>
+                            <th>Mobile Number</th>
+                            <th>NIC</th>
+                            <th>DOB</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Madhusha</td>
+                            <td>Doctor</td>
+                            <td>Male</td>
+                            <td>madhusha@gmail.com</td>
+                            <td>076-66622616</td>
+                            <td>861225626</td>
+                            <td>1999-04-13</td>
+                            <td><span class="status online">Online</span></td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

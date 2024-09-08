@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Dashboard</title>
+    <link rel="stylesheet" href="canva2.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li>Staff</li>
+            <li>Lab</li>
+            <li>Ward</li>
+            <li>Treatment</li>
+            <li>Pharmacy</li>
+            <li>Patient</li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1>MediLab Hospital</h1>
+            <div class="user-info">
+                <span>Madhusha</span>
+                <span>Prasad</span>
+            </div>
+        </header>
+
+        <section class="stats">
+            <div class="stat-card">
+                <h3>Total Patients</h3>
+                <p>20</p>
+            </div>
+            <div class="stat-card">
+                <h3>Total Doctors</h3>
+                <p>20</p>
+            </div>
+            <div class="stat-card">
+                <h3>Total Wards</h3>
+                <p>20</p>
+            </div>
+            <div class="stat-card">
+                <h3>Total Labs</h3>
+                <p>20</p>
+            </div>
+        </section>
+
+        <section class="appointments">
+            <h2>Appointments</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Doctor</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Chance Vaccano</td>
+                        <td>10.01.2023</td>
+                        <td>Pending</td>
+                        <td>
+                            <button class="accept">Accept</button>
+                            <button class="reject">Reject</button>
+                        </td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="recent-doctors">
+            <h2>Recent Doctors</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Mobile</th>
+                        <th>Address</th>
+                        <th>Consultancy Charge</th>
+                        <th>Education</th>
+                        <th>DOB</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Sam</td>
+                        <td>0771234567</td>
+                        <td>Kandy</td>
+                        <td>2500.00</td>
+                        <td>MBBS</td>
+                        <td>1964-08-17</td>
+                        <td>Online</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="out-of-stock">
+            <h2>Out of Stock</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Drug Name</th>
+                        <th>Expire Date</th>
+                        <th>Manufacture Date</th>
+                        <th>Price</th>
+                        <th>QTY</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vitamin C</td>
+                        <td>2025-12-01</td>
+                        <td>2023-12-13</td>
+                        <td>1500.00</td>
+                        <td>0</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Management Dashboard</title>
+    <link rel="stylesheet" href="canva3.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>MediLab Hospital</h2>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Staff</a></li>
+                    <li><a href="#">Lab</a></li>
+                    <li><a href="#">Ward</a></li>
+                    <li><a href="#">Treatment</a></li>
+                    <li><a href="#">Pharmacy</a></li>
+                    <li><a href="#">Patient</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <div class="user-info">
+                    <span>Nishchal</span>
+                </div>
+                <div class="hospital-logo">
+                    <h2>MediLab Hospital</h2>
+                </div>
+                <div class="user-info">
+                    <span>Khambhayata</span>
+                </div>
+            </header>
+            <section class="dashboard">
+                <div class="summary-cards">
+                    <div class="card">
+                        <h3>Total Customer</h3>
+                        <p>25</p>
+                    </div>
+                    <div class="card">
+                        <h3>Total Medicine</h3>
+                        <p>25</p>
+                    </div>
+                    <div class="card">
+                        <h3>Total Manufactures</h3>
+                        <p>25</p>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button>Create Invoice</button>
+                    <button>Supplier</button>
+                    <button>Medicine</button>
+                </div>
+                <div class="reports">
+                    <div class="report">
+                        <h3>Purchase Reports</h3>
+                        <div class="chart" id="purchase-chart"></div>
+                    </div>
+                    <div class="report">
+                        <h3>Sells Reports</h3>
+                        <div class="chart" id="sales-chart"></div>
+                    </div>
+                    <div class="report">
+                        <h3>Stock Reports</h3>
+                        <div class="chart" id="stock-chart"></div>
+                    </div>
+                </div>
+                <div class="out-of-stock">
+                    <h3>Out of Stock</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Drug Name</th>
+                                <th>Expire Date</th>
+                                <th>Manufacture Date</th>
+                                <th>Price</th>
+                                <th>QTY</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Vitamin C</td>
+                                <td>2024-01-01</td>
+                                <td>2023-01-01</td>
+                                <td>$5</td>
+                                <td>150</td>
+                                <td class="status available">Available</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Paracetamol</td>
+                                <td>2024-03-01</td>
+                                <td>2023-02-01</td>
+                                <td>$2</td>
+                                <td>0</td>
+                                <td class="status out-of-stock">Out of Stock</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Amoxicillin</td>
+                                <td>2025-01-01</td>
+                                <td>2024-01-01</td>
+                                <td>$10</td>
+                                <td>0</td>
+                                <td class="status out-of-stock">Out of Stock</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Amlodipine</td>
+                                <td>2024-06-01</td>
+                                <td>2023-06-01</td>
+                                <td>$8</td>
+                                <td>275</td>
+                                <td class="status available">Available</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

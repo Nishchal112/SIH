@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Management</title>
+    <link rel="stylesheet" href="canva4.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Medicine Management</h1>
+        </header>
+
+        <div class="medicine-management">
+            <div class="form-section">
+                <button class="generate-report">Generate Report</button>
+
+                <div class="form-row">
+                    <label for="medicine-id">Medicine ID</label>
+                    <input type="text" id="medicine-id" placeholder="Enter Medicine ID">
+                    <button class="search-btn">Search</button>
+                </div>
+
+                <div class="form-row">
+                    <label for="medicine-name">Medicine Name</label>
+                    <input type="text" id="medicine-name" placeholder="Enter Medicine Name">
+                </div>
+
+                <div class="form-row">
+                    <label for="supplier-name">Supplier Name</label>
+                    <input type="text" id="supplier-name" placeholder="Enter Supplier Name">
+                </div>
+
+                <div class="form-row">
+                    <label for="expire-date">Expire Date</label>
+                    <input type="date" id="expire-date">
+                </div>
+
+                <div class="form-row">
+                    <label for="manufacture-date">Manufacture Date</label>
+                    <input type="date" id="manufacture-date">
+                </div>
+
+                <div class="form-row">
+                    <label for="quantity">QTY</label>
+                    <input type="number" id="quantity" placeholder="Enter Quantity">
+                </div>
+
+                <div class="form-row">
+                    <label for="unit-price">Unit Price</label>
+                    <input type="text" id="unit-price" placeholder="Enter Unit Price">
+                </div>
+
+                <div class="buttons">
+                    <button class="add-btn">Add</button>
+                    <button class="update-btn">Update</button>
+                    <button class="delete-btn">Delete</button>
+                </div>
+            </div>
+
+            <div class="table-section">
+                <h2>Out of Stock</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Medicine Name</th>
+                            <th>Expire Date</th>
+                            <th>Manufacture Date</th>
+                            <th>Supplier Name</th>
+                            <th>Unit Price</th>
+                            <th>QTY</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Vitamin C</td>
+                            <td>2024-12-01</td>
+                            <td>2023-01-12</td>
+                            <td>BioRx</td>
+                            <td>$10</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Paracetamol</td>
+                            <td>2024-11-15</td>
+                            <td>2023-03-10</td>
+                            <td>MediCare</td>
+                            <td>$5</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Amoxicillin</td>
+                            <td>2025-01-20</td>
+                            <td>2023-06-18</td>
+                            <td>HealthPharm</td>
+                            <td>$15</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

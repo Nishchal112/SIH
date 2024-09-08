@@ -1,0 +1,158 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #f7f7f7 50%, #e0f7fa 50%);
+}
+
+.content {
+    max-width: 50%;
+}
+
+.content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.illustration img {
+    max-width: 100%;
+    height: auto;
+}
+
+.signup {
+    background-color: #fff;
+    padding: 40px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: -30px 20px 20px;
+    border-radius: 10px;
+}
+
+.signup h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.signup p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.role-selector {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.role {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    background-color: #eee;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.role.active {
+    background-color: #9c27b0;
+    color: #fff;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: #9c27b0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button[type="submit"]:hover {
+    background-color: #7b1fa2;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
