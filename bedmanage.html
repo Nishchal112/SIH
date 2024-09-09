@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bed Availability Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    /* Bed Container */
+    #bed-container {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      grid-gap: 20px;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    /* Bed Styles */
+    .bed {
+      width: 80px;
+      height: 140px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    /* Male - Non-reserved (Available) Bed */
+    .available.male {
+      background-color: #fff;
+      border: 2px solid #28a745;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+
+    /* Female - Reserved Bed */
+    .reserved.female {
+      background-color: #ffebf5; /* Light pink color */
+      border: 2px solid #ff69b4;
+    }
+
+    /* Male - Reserved Bed */
+    .reserved.male {
+      background-color: #e0e0e0;
+      border: 2px solid #a9a9a9;
+    }
+
+    /* Bed Icon */
+    .bed::before {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 100px;
+      border-radius: 10px;
+      background-color: inherit;
+    }
+
+    /* Pillow Icon */
+    .bed::after {
+      content: '';
+      position: absolute;
+      top: -15px;
+      width: 40px;
+      height: 15px;
+      border-radius: 5px;
+      background-color: inherit;
+    }
+
+    /* Bed Number */
+    .bed-number {
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+      font-size: 12px;
+      color: #333;
+    }
+
+    /* Focus Effect on Available Bed */
+    .available:hover {
+      transform: scale(1.05);
+      background-color: #f8f9fa;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      #bed-container {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      }
+
+      .bed {
+        width: 70px;
+        height: 120px;
+      }
+
+      .bed::before {
+        width: 40px;
+        height: 80px;
+      }
+
+      .bed::after {
+        width: 30px;
+        height: 12px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hospital Bed Availability Dashboard</h1>
+
+  <div id="bed-container">
+    <!-- Female Reserved Beds -->
+    <div class="bed reserved female"><div class="bed-number">1</div></div>
+    <div class="bed reserved female"><div class="bed-number">2</div></div>
+    <div class="bed reserved female"><div class="bed-number">3</div></div>
+    <div class="bed reserved female"><div class="bed-number">4</div></div>
+    <div class="bed reserved female"><div class="bed-number">5</div></div>
+    <div class="bed reserved female"><div class="bed-number">6</div></div>
+    <div class="bed reserved female"><div class="bed-number">7</div></div>
+    <div class="bed reserved female"><div class="bed-number">8</div></div>
+    <div class="bed reserved female"><div class="bed-number">9</div></div>
+    <div class="bed reserved female"><div class="bed-number">10</div></div>
+
+    <!-- Male Available Beds -->
+    <div class="bed available male"><div class="bed-number">11</div></div>
+    <div class="bed available male"><div class="bed-number">12</div></div>
+    <div class="bed available male"><div class="bed-number">13</div></div>
+    <div class="bed available male"><div class="bed-number">14</div></div>
+    <div class="bed available male"><div class="bed-number">15</div></div>
+    <div class="bed available male"><div class="bed-number">16</div></div>
+    <div class="bed available male"><div class="bed-number">17</div></div>
+    <div class="bed available male"><div class="bed-number">18</div></div>
+    <div class="bed available male"><div class="bed-number">19</div></div>
+    <div class="bed available male"><div class="bed-number">20</div></div>
+
+    <!-- Additional Beds (Female Reserved) -->
+    <div class="bed reserved female"><div class="bed-number">21</div></div>
+    <div class="bed reserved female"><div class="bed-number">22</div></div>
+    <div class="bed reserved female"><div class="bed-number">23</div></div>
+    <div class="bed reserved female"><div class="bed-number">24</div></div>
+    <div class="bed reserved female"><div class="bed-number">25</div></div>
+    <div class="bed reserved female"><div class="bed-number">26</div></div>
+    <div class="bed reserved female"><div class="bed-number">27</div></div>
+    <div class="bed reserved female"><div class="bed-number">28</div></div>
+    <div class="bed reserved female"><div class="bed-number">29</div></div>
+    <div class="bed reserved female"><div class="bed-number">30</div></div>
+
+    <!-- Additional Beds (Male Available) -->
+    <div class="bed available male"><div class="bed-number">31</div></div>
+    <div class="bed available male"><div class="bed-number">32</div></div>
+    <div class="bed available male"><div class="bed-number">33</div></div>
+    <div class="bed available male"><div class="bed-number">34</div></div>
+    <div class="bed available male"><div class="bed-number">35</div></div>
+    <div class="bed available male"><div class="bed-number">36</div></div>
+    <div class="bed available male"><div class="bed-number">37</div></div>
+    <div class="bed available male"><div class="bed-number">38</div></div>
+    <div class="bed available male"><div class="bed-number">39</div></div>
+    <div class="bed available male"><div class="bed-number">40</div></div>
+  </div>
+
+</body>
+</html>
